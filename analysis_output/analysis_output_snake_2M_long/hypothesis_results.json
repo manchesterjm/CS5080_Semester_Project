@@ -1,0 +1,183 @@
+{
+  "h1_imagination_improves": {
+    "mse": {
+      "spearman_rho": -0.03308270676691729,
+      "p_value": 0.8898759648856192,
+      "significant": false,
+      "improving": true
+    },
+    "ssim": {
+      "spearman_rho": -0.08421052631578946,
+      "p_value": 0.7241036435108114,
+      "significant": false,
+      "improving": false
+    },
+    "head_error": {
+      "spearman_rho": 0.35816413449925155,
+      "p_value": 0.12100097989267375,
+      "significant": false,
+      "improving": false
+    },
+    "body_accuracy": {
+      "spearman_rho": 0.3398496240601503,
+      "p_value": 0.14263670537136694,
+      "significant": false,
+      "improving": true
+    },
+    "food_correct": {
+      "spearman_rho": 0.12335465332669647,
+      "p_value": 0.6043718529353506,
+      "significant": false,
+      "improving": true
+    },
+    "early_vs_late": {
+      "k": 5,
+      "early_steps": [
+        55000,
+        155000,
+        258104,
+        358104,
+        456097
+      ],
+      "late_steps": [
+        1601446,
+        1705624,
+        1805624,
+        1912972,
+        2015965
+      ],
+      "metrics": {
+        "mse": {
+          "early_mean": 0.005254113340303951,
+          "late_mean": 0.004804377160970047,
+          "t_statistic": 1.1585726381513315,
+          "p_value": 0.3072919383411811,
+          "significant": false,
+          "improved": true
+        },
+        "ssim": {
+          "early_mean": 0.9713811440584804,
+          "late_mean": 0.973538155122783,
+          "t_statistic": -0.9082125531966168,
+          "p_value": 0.40816600245158685,
+          "significant": false,
+          "improved": true
+        },
+        "head_error": {
+          "early_mean": 0.0513109265438926,
+          "late_mean": 0.06495882891125343,
+          "t_statistic": -0.5747303044673048,
+          "p_value": 0.5812718689126941,
+          "significant": false,
+          "improved": false
+        },
+        "body_accuracy": {
+          "early_mean": 0.835058888453216,
+          "late_mean": 0.8691227726223152,
+          "t_statistic": -1.4665725878721827,
+          "p_value": 0.18845136701854537,
+          "significant": false,
+          "improved": true
+        },
+        "food_correct": {
+          "early_mean": 0.2001829826166514,
+          "late_mean": 0.2673376029277219,
+          "t_statistic": -1.3309468633142687,
+          "p_value": 0.2522895599095805,
+          "significant": false,
+          "improved": true
+        }
+      }
+    }
+  },
+  "h2_correlates_with_performance": {
+    "mse": {
+      "spearman_rho": -0.09924812030075188,
+      "spearman_p": 0.6771888443218218,
+      "pearson_r": -0.30478765792717416,
+      "pearson_p": 0.19133616446583177
+    },
+    "ssim": {
+      "spearman_rho": 0.12030075187969923,
+      "spearman_p": 0.6134176645307824,
+      "pearson_r": 0.3315650139921341,
+      "pearson_p": 0.15326352287099096
+    },
+    "head_error": {
+      "spearman_rho": 0.1632807083746588,
+      "spearman_p": 0.4915573499532812,
+      "pearson_r": -0.037029145520272935,
+      "pearson_p": 0.876830001845313
+    },
+    "body_accuracy": {
+      "spearman_rho": 0.5112781954887218,
+      "spearman_p": 0.02122064413322479,
+      "pearson_r": 0.5686284308645699,
+      "pearson_p": 0.008892289210060368
+    },
+    "food_correct": {
+      "spearman_rho": 0.09025950243416814,
+      "spearman_p": 0.705106902735868,
+      "pearson_r": 0.24196578841889038,
+      "pearson_p": 0.30404234344320613
+    }
+  },
+  "h3_semantic_vs_pixel": {
+    "correlations": {
+      "mse": {
+        "rho": -0.09924812030075188,
+        "p": 0.6771888443218218
+      },
+      "ssim": {
+        "rho": 0.12030075187969923,
+        "p": 0.6134176645307824
+      },
+      "head_error": {
+        "rho": 0.1632807083746588,
+        "p": 0.4915573499532812
+      },
+      "body_accuracy": {
+        "rho": 0.5112781954887218,
+        "p": 0.02122064413322479
+      },
+      "food_correct": {
+        "rho": 0.09025950243416814,
+        "p": 0.705106902735868
+      }
+    },
+    "avg_pixel_abs_rho": 0.10977443609022555,
+    "avg_semantic_abs_rho": 0.25493946876584955,
+    "fisher_z": {
+      "best_pixel": "ssim",
+      "best_pixel_rho": 0.12030075187969923,
+      "best_semantic": "body_accuracy",
+      "best_semantic_rho": 0.5112781954887218,
+      "z_statistic": 1.2932253439271106,
+      "p_value": 0.19593313258562017,
+      "significant": false
+    }
+  },
+  "num_checkpoints": 20,
+  "checkpoint_steps": [
+    55000,
+    155000,
+    258104,
+    358104,
+    456097,
+    556097,
+    673076,
+    773076,
+    883076,
+    987449,
+    1087449,
+    1193594,
+    1293594,
+    1401446,
+    1501446,
+    1601446,
+    1705624,
+    1805624,
+    1912972,
+    2015965
+  ]
+}

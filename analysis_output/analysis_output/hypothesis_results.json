@@ -1,0 +1,124 @@
+{
+  "h1_imagination_improves": {
+    "mse": {
+      "spearman_rho": -0.5488721804511278,
+      "p_value": 0.012202217962291389,
+      "significant": true,
+      "improving": true
+    },
+    "ssim": {
+      "spearman_rho": 0.6541353383458646,
+      "p_value": 0.0017551954128432118,
+      "significant": true,
+      "improving": true
+    },
+    "head_error": {
+      "spearman_rho": -0.8501394549847937,
+      "p_value": 2.0740124504548025e-06,
+      "significant": true,
+      "improving": true
+    },
+    "body_accuracy": {
+      "spearman_rho": 0.3550207095743947,
+      "p_value": 0.12453637946191341,
+      "significant": false,
+      "improving": true
+    },
+    "food_correct": {
+      "spearman_rho": 0.583145387052353,
+      "p_value": 0.006960234268770279,
+      "significant": true,
+      "improving": true
+    }
+  },
+  "h2_correlates_with_performance": {
+    "mse": {
+      "spearman_rho": -0.5699248120300752,
+      "spearman_p": 0.008703721225416199,
+      "pearson_r": -0.4422164116403285,
+      "pearson_p": 0.050899595662067414
+    },
+    "ssim": {
+      "spearman_rho": 0.6300751879699248,
+      "spearman_p": 0.0029049508134043086,
+      "pearson_r": 0.44352637248454707,
+      "pearson_p": 0.05013703920402487
+    },
+    "head_error": {
+      "spearman_rho": -0.8425893710151242,
+      "spearman_p": 3.135631354691067e-06,
+      "pearson_r": -0.6612784611961873,
+      "pearson_p": 0.0014987856529739237
+    },
+    "body_accuracy": {
+      "spearman_rho": 0.3520120594932558,
+      "spearman_p": 0.1279885364001657,
+      "pearson_r": 0.3467934577735641,
+      "pearson_p": 0.13413663301125964
+    },
+    "food_correct": {
+      "spearman_rho": 0.5974418546058945,
+      "spearman_p": 0.005407970919423401,
+      "pearson_r": 0.4567243216690082,
+      "pearson_p": 0.04293310660051545
+    }
+  },
+  "h3_semantic_vs_pixel": {
+    "correlations": {
+      "mse": {
+        "rho": -0.5699248120300752,
+        "p": 0.008703721225416199
+      },
+      "ssim": {
+        "rho": 0.6300751879699248,
+        "p": 0.0029049508134043086
+      },
+      "head_error": {
+        "rho": -0.8425893710151242,
+        "p": 3.135631354691067e-06
+      },
+      "body_accuracy": {
+        "rho": 0.3520120594932558,
+        "p": 0.1279885364001657
+      },
+      "food_correct": {
+        "rho": 0.5974418546058945,
+        "p": 0.005407970919423401
+      }
+    },
+    "avg_pixel_abs_rho": 0.6,
+    "avg_semantic_abs_rho": 0.5973477617047581,
+    "fisher_z": {
+      "best_pixel": "ssim",
+      "best_pixel_rho": 0.6300751879699248,
+      "best_semantic": "head_error",
+      "best_semantic_rho": 0.8425893710151242,
+      "z_statistic": 1.4241919534076055,
+      "p_value": 0.15439091356211398,
+      "significant": false
+    }
+  },
+  "num_checkpoints": 20,
+  "checkpoint_steps": [
+    55000,
+    105000,
+    155000,
+    205000,
+    255000,
+    305000,
+    355000,
+    405000,
+    455000,
+    505000,
+    555000,
+    605000,
+    655000,
+    705000,
+    755000,
+    805000,
+    855000,
+    949635,
+    999635,
+    1049635
+  ]
+}
