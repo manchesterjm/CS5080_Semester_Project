@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.pylint.main]
+# cv2 members are dynamically generated at runtime
+generated-members = ["cv2.*"]
+
+[tool.pylint.design]
+# Functions that legitimately need more locals (analysis pipelines, config loading)
+max-locals = 20
+# run_imagination, _render_death_frame, etc. have justified parameters
+max-args = 8
+max-positional-arguments = 8
+# SnakeGame needs grid_size, body, head, food, direction, score, steps, done, rng
+max-attributes = 10
